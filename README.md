@@ -5,6 +5,13 @@ Code implementation of paper titled:
 + Markerless Body Motion Capturing for 3D Character Animation based on Multi-view Cameras
 
 
+Pipeline:
+
+<img src="flowchart.jpg" width=800 alt="pipeline">
+
+
+cite:
+
 > @inproceedings{wang2019markerless,
   title={A markerless body motion capture system for character animation based on multi-view cameras},
   author={Wang, Jinbao and Lyu, Ke and Xue, Jian and Gao, Pengcheng and Yan, Yanfu},
