@@ -1,8 +1,8 @@
 # 3D character animation driven by markerless human body motion capturing
 
 Code implementation of paper titled:
-+ A Markerless Body Motion Capture System for Character Animation Based on Multi-view Cameras
-+ Markerless Body Motion Capturing for 3D Character Animation based on Multi-view Cameras
++ [A Markerless Body Motion Capture System for Character Animation Based on Multi-view Cameras](https://ieeexplore.ieee.org/abstract/document/8683506)
++ [Markerless Body Motion Capturing for 3D Character Animation based on Multi-view Cameras](http://arxiv.org/abs/2212.05788)
 
 
 Pipeline:
