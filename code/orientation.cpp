@@ -35,7 +35,6 @@ QMatrix4x4 orientation::calcRotation(QVector3D va1, QVector3D vb1)
 
     QMatrix3x3 rotation = vecb * veca.transposed();
 
-
     return getQmatrix4x4(rotation);
 }
 
@@ -184,23 +183,14 @@ QMap<QString, QMatrix4x4>orientation::calcRotationByJoints(QMap<QString, QVector
 
     // incase rotation matrix is zeros when the bone vector is empty.
     if (v_root.isNull()) root = Identity;
-
     if (v_head.isNull()) head = Identity;
-
     if (v_l_shoulder.isNull()) l_shoulder = Identity;
-
     if (v_l_elbow.isNull()) l_elbow = Identity;
-
     if (v_r_shoulder.isNull()) l_shoulder = Identity;
-
     if (v_r_elbow.isNull()) r_elbow = Identity;
-
     if (v_l_hip.isNull()) l_hip = Identity;
-
     if (v_l_knee.isNull()) l_knee = Identity;
-
     if (v_r_hip.isNull()) r_hip = Identity;
-
     if (v_r_knee.isNull()) r_knee = Identity;
 
     // packaging the date
@@ -266,7 +256,6 @@ QMatrix4x4 orientation::calcRotationAndAvoidSpinning(QVector3D v_joint)
         // 如果y_reprojection在y-o-x_reprojection平面内，且与y轴为锐角，则计算结束, 若为钝角，则为反向180度
         if ((plane::PLANE_ON == status) && (innerProduct >= 0)) break;
     }
-
 
     // qDebug()<<spinAngle;
 
