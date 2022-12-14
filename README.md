@@ -6,11 +6,16 @@ Code implementation of paper titled:
 
 
 Pipeline:
+<div align=left><img src="flowchart.jpg" width=750 alt="pipeline"></div>
 
-<img src="flowchart.jpg" width=800 alt="pipeline">
+System:
+<div align=left><img src="display.jpg" width=750 alt="display"></div>
+
+Example:
+<div align=left><img src="example.jpg" width=750 alt="example" align=center /></div>
 
 
-cite:
+\cite{wang2019markerless}:
 
 > @inproceedings{wang2019markerless,
   title={A markerless body motion capture system for character animation based on multi-view cameras},
