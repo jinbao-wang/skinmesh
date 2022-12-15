@@ -166,11 +166,9 @@ QMap<QString, QMatrix4x4>orientation::calcRotationByJoints(QMap<QString, QVector
     float angle = calcRootTurnAroundRotateAngle(v_root_x, QVector3D(1, 0, 0));
     root.rotate(angle, QVector3D(1, 0, 0));
 
-
     if ((angle > 90) || (angle < -90)) {
         isFaceFront = !isFaceFront;
     }
-
 
     // make sure the display result is the same with the openGL space
     root   = up * root * up.inverted();
@@ -179,7 +177,6 @@ QMap<QString, QMatrix4x4>orientation::calcRotationByJoints(QMap<QString, QVector
     l_knee = down * l_knee * down.inverted();
     r_hip  = down * r_hip * down.inverted();
     r_knee = down * r_knee * down.inverted();
-
 
     // incase rotation matrix is zeros when the bone vector is empty.
     if (v_root.isNull()) root = Identity;
@@ -205,7 +202,6 @@ QMap<QString, QMatrix4x4>orientation::calcRotationByJoints(QMap<QString, QVector
     rotationMap.insert(    "l_knee", l_knee);
     rotationMap.insert(     "r_hip", r_hip);
     rotationMap.insert(    "r_knee", r_knee);
-
 
     return rotationMap;
 }
