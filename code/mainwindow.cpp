@@ -111,16 +111,16 @@ QMatrix4x4 MainWindow::getNodeFinalMatrix(QMatrix4x4 NodeMatrix, QMatrix4x4 Node
 void MainWindow::bindAvatarBoneName()
 {
     if (avatarName == "astroBoy") {
-        avatarBoneName.insert("root",       "root");
-        avatarBoneName.insert("head",       "neck01");
-        avatarBoneName.insert("l_shoulder", "L_shoulder");
-        avatarBoneName.insert("l_elbow",    "L_elbow");
-        avatarBoneName.insert("r_shoulder", "R_shoulder");
-        avatarBoneName.insert("r_elbow",    "R_elbow");
-        avatarBoneName.insert("l_hip",      "L_hip");
-        avatarBoneName.insert("l_knee",     "L_knee_02");
-        avatarBoneName.insert("r_hip",      "R_hip");
-        avatarBoneName.insert("r_knee",     "R_knee_02");
+        avatarBoneName.insert("root",       "astroBoy_newSkeleton_root");
+        avatarBoneName.insert("head",       "astroBoy_newSkeleton_neck01");
+        avatarBoneName.insert("l_shoulder", "astroBoy_newSkeleton_L_shoulder");
+        avatarBoneName.insert("l_elbow",    "astroBoy_newSkeleton_L_elbow");
+        avatarBoneName.insert("r_shoulder", "astroBoy_newSkeleton_R_shoulder");
+        avatarBoneName.insert("r_elbow",    "astroBoy_newSkeleton_R_elbow");
+        avatarBoneName.insert("l_hip",      "astroBoy_newSkeleton_L_hip");
+        avatarBoneName.insert("l_knee",     "astroBoy_newSkeleton_L_knee_02");
+        avatarBoneName.insert("r_hip",      "astroBoy_newSkeleton_R_hip");
+        avatarBoneName.insert("r_knee",     "astroBoy_newSkeleton_R_knee_02");
     } else if (avatarName == "girl") {
         avatarBoneName.insert("root",       "QuickRigCharacter2_Hips");
         avatarBoneName.insert("head",       "QuickRigCharacter2_Neck");
